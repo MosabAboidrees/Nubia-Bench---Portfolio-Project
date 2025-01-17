@@ -8,12 +8,19 @@ export default function Team() {
       role: 'Founder, Curriculum Designer & Lead Instructor',
       image: 'https://media.licdn.com/dms/image/v2/D4D03AQHIHDQX2NuNDA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690380896661?e=1742428800&v=beta&t=3C07dcvahUgbiRADYeyQyGh6KMrXrJobJIVRGniel10',
       bio: 'Ph.D. in Computer Science with 15 years of teaching experience.',
+      linkedin: 'https://www.linkedin.com/in/mosab-aboidrees-altraifi-yousif-041aaa83/',
+      mail: 'mailto:mosab_mahala@yahoo.com',
+      github: 'https://github.com/MosabAboidrees',
+
     },
     {
       name: 'Mohamedalfateh T. M. SAEED',
       role: 'Co-Founder, Curriculum Designer & Instructor',
       image: 'https://media.licdn.com/dms/image/v2/D4D03AQFylxwVTu6HCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1688766191008?e=1742428800&v=beta&t=M5HRgHWkN2k3IwIUhHH4WozIIQHNEchIixLmRVJBVwA',
       bio: 'Former senior engineer at major tech companies with a passion for education.',
+      linkedin: 'https://www.linkedin.com/in/mohamedalfateh-t-m-saeed-6721a819b/',
+      mail: 'mailto:mohamedalfateh83@gmail.com',
+      github: 'https://github.com/FatihSir'
     },
     {
       name: 'Azza Omer Mohamed',
@@ -46,13 +53,13 @@ export default function Team() {
                 <p className="text-sm text-primary-600 mb-2">{member.role}</p>
                 <p className="text-gray-600 mb-4">{member.bio}</p>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-gray-400 hover:text-primary-500">
+                  <a href={member.github} className="text-gray-400 hover:text-primary-500">
                     <Github className="h-5 w-5" />
                   </a>
-                  <a href="#" className="text-gray-400 hover:text-primary-500">
+                  <a href={member.linkedin} className="text-gray-400 hover:text-primary-500">
                     <Linkedin className="h-5 w-5" />
                   </a>
-                  <a href="#" className="text-gray-400 hover:text-primary-500">
+                  <a href={member.mail} className="text-gray-400 hover:text-primary-500">
                     <Mail className="h-5 w-5" />
                   </a>
                 </div>
