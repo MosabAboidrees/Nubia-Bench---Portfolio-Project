@@ -6,13 +6,13 @@ export default function Team() {
     {
       name: 'Mosab Aboidrees Altraifi Yousif',
       role: 'Founder, Curriculum Designer & Lead Instructor',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80',
+      image: 'https://media.licdn.com/dms/image/v2/D4D03AQHIHDQX2NuNDA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690380896661?e=1742428800&v=beta&t=3C07dcvahUgbiRADYeyQyGh6KMrXrJobJIVRGniel10',
       bio: 'Ph.D. in Computer Science with 15 years of teaching experience.',
     },
     {
       name: 'Mohamedalfateh T. M. SAEED',
       role: 'Co-Founder, Curriculum Designer & Instructor',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80',
+      image: 'https://media.licdn.com/dms/image/v2/D4D03AQFylxwVTu6HCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1688766191008?e=1742428800&v=beta&t=M5HRgHWkN2k3IwIUhHH4WozIIQHNEchIixLmRVJBVwA',
       bio: 'Former senior engineer at major tech companies with a passion for education.',
     },
     {
