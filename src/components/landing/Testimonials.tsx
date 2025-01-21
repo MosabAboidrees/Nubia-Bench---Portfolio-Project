@@ -26,7 +26,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-display font-bold text-gray-900">
@@ -41,26 +41,26 @@ export function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-white rounded-lg shadow-sm border border-primary-100 overflow-hidden hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg shadow-lg border border-primary-100 overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             >
               <div className="p-6">
                 <div className="flex items-center space-x-4">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="h-12 w-12 rounded-full"
+                    className="h-16 w-16 rounded-full object-cover"
                   />
                   <div>
-                    <h3 className="text-lg font-medium text-gray-900">{testimonial.name}</h3>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                    <h3 className="text-lg font-semibold text-gray-900">{testimonial.name}</h3>
+                    <p className="text-sm text-primary-500">{testimonial.role}</p>
                   </div>
                 </div>
-                <div className="mt-4 flex">
+                <div className="mt-4 flex space-x-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-primary-400" fill="currentColor" />
                   ))}
                 </div>
-                <p className="mt-4 text-gray-600 italic">"{testimonial.content}"</p>
+                <p className="mt-4 text-gray-600 italic font-medium">"{testimonial.content}"</p>
               </div>
             </div>
           ))}
