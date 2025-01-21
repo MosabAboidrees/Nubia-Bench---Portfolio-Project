@@ -17,16 +17,10 @@ export default function Team() {
       name: 'Mohamedalfateh T. M. SAEED',
       role: 'Co-Founder, Curriculum Designer & Instructor',
       image: 'https://media.licdn.com/dms/image/v2/D4D03AQFylxwVTu6HCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1688766191008?e=1742428800&v=beta&t=M5HRgHWkN2k3IwIUhHH4WozIIQHNEchIixLmRVJBVwA',
-      bio: 'Former senior engineer at major tech companies with a passion for education.',
+      bio: 'Electrical & Electronics Engineering Student at Ondokus Mayis University.',
       linkedin: 'https://www.linkedin.com/in/mohamedalfateh-t-m-saeed-6721a819b/',
       mail: 'mailto:mohamedalfateh83@gmail.com',
       github: 'https://github.com/FatihSir'
-    },
-    {
-      name: 'Azza Omer Mohamed',
-      role: 'Co-Founder, Curriculum Designer & Instructor',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80',
-      bio: 'Specializes in creating engaging and effective learning experiences.',
     },
   ];
 
@@ -39,16 +33,16 @@ export default function Team() {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <main className="max-w-5xl mx-auto px-40 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-32">
           {team.map((member) => (
             <div key={member.name} className="bg-white rounded-lg shadow-md overflow-hidden border border-primary-100">
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-64 object-cover"
+                className="w-full h-128 object-cover"
               />
-              <div className="p-6">
+              <div className="p-4">
                 <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
                 <p className="text-sm text-primary-600 mb-2">{member.role}</p>
                 <p className="text-gray-600 mb-4">{member.bio}</p>
