@@ -30,7 +30,7 @@ export default function Register() {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center">
           <Link to="/">
-            <Pyramid className="h-16 w-16 text-primary-500" />
+            <Pyramid className="h-16 w-16 text-primary-500 transition-all duration-300 hover:text-primary-600" />
           </Link>
         </div>
         <h2 className="mt-6 text-center text-3xl font-display font-bold text-gray-900">
@@ -39,9 +39,9 @@ export default function Register() {
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow-lg sm:rounded-lg sm:px-10 border border-primary-100">
+        <div className="bg-white py-8 px-6 sm:px-10 shadow-lg sm:rounded-lg border border-primary-100">
           {error && (
-            <div className="mb-4 p-2 text-sm text-red-700 bg-red-100 rounded-md">
+            <div className="mb-4 p-3 text-sm text-red-700 bg-red-100 rounded-md border border-red-200">
               {error}
             </div>
           )}
@@ -55,7 +55,7 @@ export default function Register() {
                 id="name"
                 type="text"
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 py-2 px-4 transition-all duration-200"
                 value={formData.name}
                 onChange={e => setFormData(prev => ({ ...prev, name: e.target.value }))}
               />
@@ -69,7 +69,7 @@ export default function Register() {
                 id="email"
                 type="email"
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 py-2 px-4 transition-all duration-200"
                 value={formData.email}
                 onChange={e => setFormData(prev => ({ ...prev, email: e.target.value }))}
               />
@@ -83,7 +83,7 @@ export default function Register() {
                 id="password"
                 type="password"
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 py-2 px-4 transition-all duration-200"
                 value={formData.password}
                 onChange={e => setFormData(prev => ({ ...prev, password: e.target.value }))}
               />
@@ -94,7 +94,7 @@ export default function Register() {
                 I am a
               </label>
               <div className="grid grid-cols-2 gap-4">
-                <label className="relative flex items-center justify-center p-4 border rounded-lg cursor-pointer hover:bg-sand-50">
+                <label className="relative flex items-center justify-center p-4 border rounded-lg cursor-pointer hover:bg-sand-50 transition-all duration-200">
                   <input
                     type="radio"
                     className="absolute h-0 w-0 opacity-0"
@@ -110,7 +110,7 @@ export default function Register() {
                     <div className="absolute inset-0 border-2 border-primary-500 rounded-lg pointer-events-none" />
                   )}
                 </label>
-                <label className="relative flex items-center justify-center p-4 border rounded-lg cursor-pointer hover:bg-sand-50">
+                <label className="relative flex items-center justify-center p-4 border rounded-lg cursor-pointer hover:bg-sand-50 transition-all duration-200">
                   <input
                     type="radio"
                     className="absolute h-0 w-0 opacity-0"
@@ -132,7 +132,7 @@ export default function Register() {
             <div>
               <button
                 type="submit"
-                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-500 hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                className="w-full flex justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all duration-300 transform hover:scale-105"
               >
                 Register
               </button>
@@ -154,7 +154,7 @@ export default function Register() {
             <div className="mt-6">
               <Link
                 to="/login"
-                className="w-full flex items-center justify-center px-4 py-2 border border-primary-300 shadow-sm text-sm font-medium rounded-md text-primary-700 bg-white hover:bg-sand-50"
+                className="w-full flex items-center justify-center px-6 py-3 border border-primary-300 shadow-md text-sm font-medium rounded-md text-primary-700 bg-white hover:bg-sand-50 transition-all duration-200"
               >
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Back to Login
