@@ -1,11 +1,11 @@
 # Nubia Bench
+Nubia Bench is an innovative coding school platform, seamlessly integrating modern educational tools with the cultural richness of the Nubian civilization. Designed toempower both educators and students, this platform allows teachers to efficiently create and manage courses, while providing students with an intuitive environment tosubmit assignments and receive immediate feedback.
 
-A culturally inspired coding school platform that blends modern functionality with the rich heritage of the Nubian civilization. The platform enables teachers to create and manage courses and tasks, while students can submit their assignments and receive instant feedback.
 
 ## Team Members
 - Mosab Aboidrees Altraifi Yousif
 - Mohamedalfateh T. M. SAEED
-- Azza Omer Mohamed
+
 
 ## Features
 
@@ -90,11 +90,10 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 
-Nubia Bench is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Nubia Bench is licensed under the MIT License.
 
 ## Contact
 
 For inquiries or support, reach out to the team:
 - Mosab Aboidrees Altraifi Yousif
 - Mohamedalfateh T. M. SAEED
-- Azza Omer Mohamed
