@@ -27,7 +27,9 @@ export default function Login() {
     <div className="min-h-screen bg-sand-50 bg-nubian-pattern flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center">
-          <Pyramid className="h-16 w-16 text-primary-500" />
+          <Link to="/">
+            <Pyramid className="h-16 w-16 text-primary-500 hover:text-primary-600" />
+          </Link>
         </div>
         <h2 className="mt-6 text-center text-3xl font-display font-bold text-gray-900">
           Welcome to Nubia Bench

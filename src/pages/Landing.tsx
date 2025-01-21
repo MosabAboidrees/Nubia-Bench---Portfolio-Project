@@ -85,11 +85,11 @@ export default function Landing() {
                 </li>
                 <li className="flex items-center text-gray-600">
                   <Phone className="h-5 w-5 text-primary-400 mr-2" />
-                  +1 (555) 123-4567
+                  +9 (551) 123-4567
                 </li>
                 <li className="flex items-center text-gray-600">
                   <MapPin className="h-5 w-5 text-primary-400 mr-2" />
-                  123 Education Street<br />Learning City, LC 12345
+                  Avcılar Province<br />Istanbul 34310, Türkiye.
                 </li>
               </ul>
             </div>
